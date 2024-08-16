@@ -1,0 +1,38 @@
+package org.example;
+
+import java.util.Date;
+
+public class Persona {
+    protected String nombre;
+    protected String estadoAsis;
+    protected Date fecha;
+    protected  String genero;
+
+
+    public Persona(String nombre, String estadoAsis, String genero,Date fecha) {
+        this.nombre = nombre;
+        this.estadoAsis = estadoAsis;
+        this.genero = genero;
+        this.fecha= fecha;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getEstadoAsis() {
+        return estadoAsis;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public void setEstadoAsis(String estadoAsis) {
+        this.estadoAsis = estadoAsis;
+    }
+}
