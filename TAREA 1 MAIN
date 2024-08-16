@@ -1,0 +1,32 @@
+package org.example;
+
+import java.util.Date;
+import java.util.Scanner;
+
+public class EJERCICIO {
+    public static void main (String[]argas){
+        int nombre_vector1 [] = {1,2,3,4,5,6,7,8,9};
+
+        for(int i=0;i < nombre_vector1.length;i++ ){
+        }
+
+        Persona nombre_vector2[] = {new Persona("Juan", "", "M", new Date()), new Persona("Mary", "", "F", new Date())};
+        System.out.println(" REGISTRO DE ASISTENCIA ");
+
+        Scanner leer=new Scanner(System.in);
+
+        for(Persona p:nombre_vector2){
+            System.out.println("¿Esta presente ?"+p.nombre+":");
+            p.estadoAsis= leer.nextLine();
+            System.out.println(p.nombre+"-"+p.estadoAsis);
+
+        }
+        System.out.println("Mostrar registro de asistencia ");
+        for (Persona dper:nombre_vector2) {
+
+            System.out.println(dper.getNombre() + " - " + dper.estadoAsis+ " - "+ dper.genero+" - "+dper.fecha);
+
+        }
+
+    }
+}
